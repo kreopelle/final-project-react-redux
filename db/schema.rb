@@ -10,6 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_01_212542) do
+ActiveRecord::Schema.define(version: 2018_11_01_213344) do
+
+  create_table "sounds", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "audio_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end

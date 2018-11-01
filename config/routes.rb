@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+
   namespace :api do
-    resource :sound, except: [:new, :edit]
+    resources :sounds, except: [:new, :edit]
   end
+
 end
