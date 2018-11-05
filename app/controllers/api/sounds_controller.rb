@@ -37,7 +37,7 @@ class API::SoundsController < ApplicationController
 private
 
   def sound_params
-    params.require(:sound).permit(:title, :description, :audio_url)
+    params.permit(:title, :description, :audio_url)
   end
 
   def set_sound
